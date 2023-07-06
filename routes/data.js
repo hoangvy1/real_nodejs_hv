@@ -21,7 +21,7 @@ router.route("/fuel").get((req, res) => {
       console.log(err);
     } else {
       var data1 = JSON.parse(JSON.stringify(data));
-      data2 = data1.slice(0, 50);
+      data2 = data1.slice(0, 200);
       return res.json(data2);
     }
   });
@@ -33,7 +33,8 @@ router.route("/engtmp").get((req, res) => {
       console.log(err);
     } else {
       var data1 = JSON.parse(JSON.stringify(data));
-      data2 = data1.slice(0, 50);
+      data2 = data1.slice(0, 200);
+
       return res.json(data2);
     }
   });
@@ -45,7 +46,7 @@ router.route("/speed").get((req, res) => {
       console.log(err);
     } else {
       var data1 = JSON.parse(JSON.stringify(data));
-      data2 = data1.slice(0, 50);
+      data2 = data1.slice(0, 200);
       return res.json(data2);
     }
   });
