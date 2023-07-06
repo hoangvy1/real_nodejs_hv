@@ -21,8 +21,7 @@ router.route("/fuel").get((req, res) => {
       console.log(err);
     } else {
       var data1 = JSON.parse(JSON.stringify(data));
-      data2 = data1.slice(0, 50);
-      return res.json(data2);
+      return res.json(data1);
     }
   });
 });
